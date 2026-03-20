@@ -1,0 +1,152 @@
+/* Libra Moon Font Faces */
+@font-face {
+    font-family: 'Libra Moon';
+    src: url('fonts/libramoon-regular-webfont.woff2') format('woff2'),
+         url('fonts/libramoon-regular-webfont.woff') format('woff'),
+         url('fonts/LibraMoon-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libra Moon';
+    src: url('fonts/libramoon-italic-webfont.woff2') format('woff2'),
+         url('fonts/libramoon-italic-webfont.woff') format('woff'),
+         url('fonts/LibraMoon-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Libra Moon';
+    src: url('fonts/libramoon-light-webfont.woff2') format('woff2'),
+         url('fonts/libramoon-light-webfont.woff') format('woff'),
+         url('fonts/LibraMoon-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libra Moon';
+    src: url('fonts/libramoon-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/libramoon-lightitalic-webfont.woff') format('woff'),
+         url('fonts/LibraMoon-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Roboto Font Faces */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+         url('fonts/Roboto-Regular.woff') format('woff'),
+         url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.woff2') format('woff2'),
+         url('fonts/Roboto-Bold.woff') format('woff'),
+         url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Italic.woff2') format('woff2'),
+         url('fonts/Roboto-Italic.woff') format('woff'),
+         url('fonts/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-BoldItalic.woff2') format('woff2'),
+         url('fonts/Roboto-BoldItalic.woff') format('woff'),
+         url('fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(184, 112,168);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    background-image: url('assets/strap_background.png');
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+header p {
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: #000 0 2px 2px;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+
+header a {
+    display: inline-block;
+}
+
+header a svg {
+    fill: #fff;
+    width: 50px;
+    stroke: #000;
+    stroke-width: 9px;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libra Moon', serif;
+}
